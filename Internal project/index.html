@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<br><br><br><br>
+<div class="container">
+  <h2>Url form</h2>
+  <!-- <form class="form-inline" action="/action_page.php"> -->
+    <label for="email">url:</label>
+    <input type="text" class="form-control" id="url" placeholder="https://www.w3schools.com/js/js_window_location.asp" name="email" readonly>
+    <button type="submit" class="btn btn-primary" onclick="url()">Submit</button>
+    <button type="submit" class="btn btn-primary">Next</button>
+  <!-- </form> -->
+</div>
+<script>
+        function url()
+        {
+           // sessionStorage.setItem('userid',document.getElementById("url").value)
+            window.location.assign("https://www.w3schools.com/js/js_window_location.asp");
+        }
+        </script>
+</body>
+</html>
